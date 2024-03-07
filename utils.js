@@ -1,4 +1,4 @@
-export function applyFilters(responses, filters) {
+ function applyFilters(responses, filters) {
    
     return responses.filter(response => {
         return filters.every(filter => {
@@ -20,6 +20,7 @@ export function applyFilters(responses, filters) {
     });
 }
 
-export function verifyDatePicker(question, filter) {
+ function verifyDatePicker(question, filter) {
     return new Date(question.value).getTime() === new Date(filter.value).getTime()
 }
+module.exports = { applyFilters, verifyDatePicker };
