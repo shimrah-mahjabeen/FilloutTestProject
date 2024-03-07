@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 
-const {applyFilters, verifyDatePicker} = require('utils')
+const { applyFilters } = require('./utils');
 require('dotenv').config();
 
 const app = express();
